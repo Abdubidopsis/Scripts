@@ -1,17 +1,18 @@
 # 🧬 Arabis Genomic and Transcriptomic Scripts
 
-This repository contains a set of scripts for processing genomic and transcriptomic data, specifically tailored for Arabis species research involving QTL mapping, Stacks data processing, and differential expression analysis.
+This repository contains a set of scripts and pipelines for genomic and transcriptomic analysis, focused on Arabis species. It includes tools for QTL mapping, RNA-seq analysis, Stacks processing, and genome assembly quality checks.
 
 ---
 
-## 📄 Scripts Included
+## 📄 Files Included
 
-| File Name                    | Description |
-|-----------------------------|-------------|
-| `QTLmapping.R`              | R script for performing QTL analysis and visualizing genotype–phenotype associations. |
-| `gstacks_distribs.R`        | R script to summarize and visualize read depth and SNP distributions from Stacks' `gstacks` output. |
-| `stacks_raw_process.py`     | Python script for initial raw data processing in Stacks pipeline (e.g., cleaning and demultiplexing). |
-| `deseq_drought_transcriptome.py` | Python script for differential expression analysis using DESeq2 via rpy2 or prepared count data. Focuses on drought response in transcriptome datasets. |
+| File Name                               | Description |
+|----------------------------------------|-------------|
+| `QTLmapping.R`                          | R script for performing QTL analysis and visualizing genotype–phenotype associations. |
+| `gstacks_distribs.R`                   | R script to summarize and visualize read depth and SNP distributions from Stacks `gstacks` output. |
+| `stacks_raw_process.py`                | Python script for initial processing of raw reads using the Stacks pipeline. |
+| `deseq_drought_transcriptome.py`       | Python script for differential expression analysis using DESeq2 (via count data or R integration). |
+| `Genome_assmebly_Quality_Curation_pipeline.txt` | A step-by-step protocol to assess and curate genome assembly quality. Developed using non-model plant genomes. |
 
 ---
 
@@ -26,7 +27,7 @@ This repository contains a set of scripts for processing genomic and transcripto
 - `pandas`
 - `argparse`
 - `os`
-- *(optional)* `rpy2` if interfacing with R from Python
+- *(optional)* `rpy2` if integrating with R
 
 ---
 
